@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans";
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+#mobilex2,
+#tablet,
+#tabletx2,
+#desktop,
+#desktopx2 {
+  display: none;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.6rem 1.6rem 0 1.6rem;
+}
+
+.logo {
+  max-width: 9rem;
+  max-height: 3.5rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 2.8rem;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: initial;
+  cursor: pointer;
+}
+
+.btn--header {
+  background-color: #13183f;
+  color: white;
+  font-size: 1.6rem;
+  width: 14rem;
+  height: 4.8rem;
+}
+
+.btn--header:hover {
+  background: #666ca3;
+}
+
+.hero__text {
+  margin: 3.8rem 1.6rem 0 1.6rem;
+}
+.heading {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 5rem;
+
+  color: #13183f;
+}
+
+.hero__text-para {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-top: 2.6rem;
+
+  color: #83869a;
+}
+
+.btn--hero {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 3.1rem;
+  color: white;
+  width: 16.7rem;
+  height: 5.6rem;
+  margin-top: 2.4rem;
+  transition: all 0.4s;
+}
+
+.btn--hero:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+.hero__img-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6.6rem;
+}
+
+.section__hero {
+}
+.courses-box {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.course__content {
+  max-width: 34.3rem;
+}
+
+.courses__header {
+  margin: 0 1.6rem 8rem 1.6rem;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 1rem;
+}
+
+.courses__heading {
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  height: 12rem;
+  padding: 2.4rem 2.9rem 3.2rem 2.8rem;
+
+  color: #ffffff;
+}
+
+.course {
+  position: relative;
+  margin: 0 1.6rem 8rem 1.6rem;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.course:last-child {
+  margin-bottom: 8rem;
+}
+
+.course__text {
+  padding: 3.2rem 2.8rem;
+}
+
+.course__heading {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-top: 2.4rem;
+  margin-bottom: 1.6rem;
+
+  color: #13183f;
+}
+
+.course__para {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  margin-bottom: 2.4rem;
+
+  color: #83869a;
+}
+
+.course__anchor {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  text-decoration: none;
+  margin-bottom: 3.2rem;
+
+  color: #f74780;
+}
+
+.icon {
+  position: absolute;
+  top: -3rem;
+}
+
+.footer {
+  width: 100%;
+  background-color: #13183f;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.6rem 1.6rem;
+}
+
+.btn__footer {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  border-radius: 2.8rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: white;
+  padding: 0.9rem 2.4rem;
+  transition: all 1s;
+}
+
+.btn__footer:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
+
+@media screen and (min-width: 575px) {
+  #mobile {
+    display: none;
+  }
+
+  #mobilex2 {
+    display: block;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+  .header__content {
+    margin: 2.4rem 4rem 0 4rem;
+  }
+
+  .section__hero {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero__text {
+    margin: 10rem 0 0 4rem;
+    max-width: 40rem;
+  }
+
+  #mobilex2 {
+    display: none;
+  }
+
+  .hero__img-box {
+    width: 100%;
+    min-height: 60rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #tablet {
+    display: block;
+    position: absolute;
+    bottom: 5rem;
+    right: -33rem;
+  }
+
+  .corses__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 5.6rem;
+    margin: 0 4rem 8.6rem 4rem;
+  }
+
+  .courses__header,
+  .course {
+    min-width: 32rem;
+  }
+
+  .courses__heading {
+    margin-top: 5.6rem;
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+
+  .footer__content {
+    margin: 0rem 4rem 0 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #tablet {
+    transform: scale(1.2);
+    right: -30rem;
+    top: -10rem;
+  }
+}
+
+
+/* desktop */
+@media screen and (min-width: 1440px) {
+  .header__content {
+    margin-left: 16.5rem;
+    margin-right: 16.5rem;
+  }
+
+  .logo {
+   transform: scale(1.2);
+  }
+
+  .btn--header {
+    min-width: 16.7rem;
+  }
+
+  .hero__text {
+    margin-left: 16.5rem;
+    margin-top: 17.2rem;
+    margin-bottom: 22.6rem;
+    max-width: 45rem;
+  }
+
+  .heading {
+    font-size: 5.6rem;
+    line-height: 7.1rem;
+  }
+
+  .hero__text-para {
+    margin-top: 2.9rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 4rem;
+  }
+
+  #tablet {
+    display: none;
+  }
+
+  #desktop {
+    display: block;
+    position: absolute;
+    bottom: 5rem;
+    right: -45rem;
+  }
+
+  .corses__content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 5.6rem;
+    margin: 0 4rem 8.6rem 4rem;
+  }
+
+  .courses__header {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  .course__heading {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .course__para {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+  .footer__content {
+    margin: 3.2rem 16.5rem 0 16.5rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  #desktop {
+    transform: scale(1.2);
+    right: -48rem;
+  }
+}
